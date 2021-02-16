@@ -1,0 +1,168 @@
+.faqBanner {
+  height: 304px;
+  background-image: url("../images/qa.png");
+  display: flex;
+  align-items: flex-end;
+}
+
+.faqText {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  padding-bottom: 10px;
+
+  h2 {
+    font-size: 64px;
+    font-weight: bold;
+    margin-right: 10px;
+  }
+
+  .icon {
+    width: 57px;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .faqBanner {
+    height: 143px;
+    background-image: url("../images/72.png");
+  }
+
+  .faqText {
+    padding-left: 48px;
+
+    h2 {
+      font-size: 48px;
+      margin-right: 16px;
+    }
+
+    .icon {
+      width: 48px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faqText {
+    padding-left: 11px;
+
+    h2 {
+      font-size: 28px;
+      margin-right: 8px;
+    }
+
+    .icon {
+      width: 24px;
+    }
+  }
+}
+
+.faqContent {
+  margin-top: 88px;
+  margin-bottom: 156px;
+
+  h3 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+}
+
+.problem {
+  border: 1px solid #000;
+
+  li {
+    .faqtitle {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 22px 40px 22px 38px;
+      transition: background-color 1s;
+      cursor: pointer;
+      border-top: 1px solid #000;
+      border-bottom: 1px solid #000;
+
+      h4 {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      .icon {
+        font-size: 25px;
+        transition: rotate 1s;
+        transition: 0.5s;
+      }
+    }
+
+    &:hover {
+      .faqtitle {
+        background-color: #AA0601;
+        color: #fff;
+      }
+
+      .icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    .text p {
+      display: none;
+      padding: 22px 40px 22px 38px;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .faqContent {
+    margin: 40px 0px 104px 0px;
+    padding: 0px 48px;
+
+    h3 {
+      margin-bottom: 32px;
+      font-size: 28px;
+    }
+  }
+
+  .problem li .faqtitle {
+    padding: 16px 24px 16px 24px;
+
+    h4 {
+      font-size: 16px;
+    }
+
+    .icon {
+      font-size: 20px;
+    }
+  }
+
+  .text p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .faqContent {
+    margin: 24px 0px 56px 0px;
+    padding: 0px 11px;
+
+    h3 {
+      margin-bottom: 16px;
+      font-size: 20px;
+    }
+  }
+
+  .problem li .faqtitle {
+    padding: 16px 8px 16px 16px;
+  }
+}
+
+.active {
+  background-color: #aa0601;
+  color: #fff;
+
+  .icon {
+    color: #fff;
+    transform: rotate(180deg);
+  }
+}

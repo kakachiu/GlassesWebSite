@@ -1,0 +1,128 @@
+.header {
+  height: 108px;
+  background-color: #AA0601;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  .logo {
+    margin-left: 88px;
+
+    a {
+      background-image: url("../images/logo.png");
+      display: block;
+      width: 80px;
+      height: 49px;
+      text-indent: 101%;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .header .logo {
+    margin-left: 48px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    justify-content: center;
+
+    .logo {
+      margin-left: 0;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  margin-right: 88px;
+
+  a {
+    display: block;
+    font-size: 20px;
+    color: #fff;
+    padding: 40px 0px;
+    text-align: center;
+    border-bottom: 7px solid #AA0601;
+    transition: border-bottom 0.5s;
+
+    &:hover {
+      border-bottom: 7px solid #650300;
+    }
+  }
+
+  li {
+    margin-right: 64px;
+
+    &:last-child {
+      margin-right: 0px;
+    }
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .menu {
+    margin-right: 48px;
+
+    li {
+      margin-right: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .header .showmenu {
+    display: block;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: 3;
+    top: 100px;
+    left: 0;
+    right: 0;
+    margin-right: 0;
+    transition: 2.3s;
+
+    a {
+      border-bottom: none;
+
+      &:hover {
+        border-bottom: none;
+      }
+    }
+
+    li {
+      width: 100%;
+      background-color: #AA0601;
+      margin-right: 0;
+      transition: 0.5s;
+      border-bottom: 1px solid #fff;
+      border-top: 1px solid #fff;
+
+      &:hover {
+        background-color: #650300;
+      }
+    }
+  }
+}
+
+.showmenu {
+  display: none;
+  color: #fff;
+  position: absolute;
+  left: 20px;
+  font-size: 45px;
+  cursor: pointer;
+}
+
+.openmenu .menu {
+  max-height: 500px;
+}
