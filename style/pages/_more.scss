@@ -61,7 +61,7 @@
   }
 }
 
-.search{
+.search {
   z-index: 11;
 }
 @media screen and (max-width: 980px) {
@@ -114,26 +114,25 @@
   }
 }
 
-.searchInput{
+.searchInput {
   display: none;
   border-radius: 5px;
   padding: 5px 10px;
   z-index: 10;
   position: absolute;
   right: 50px;
-  
 }
-.searchInputblock{
+.searchInputblock {
   display: block;
 }
-@media screen and (max-width: 980px){
-  .searchInput{
+@media screen and (max-width: 980px) {
+  .searchInput {
     width: 150px;
   }
-} 
+}
 
 @media screen and (max-width: 767px) {
-  .searchInput{
+  .searchInputblock {
     display: none;
   }
 }

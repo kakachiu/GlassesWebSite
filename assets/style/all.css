@@ -1029,10 +1029,10 @@ img {
   }
 }
 
-.customerRecommendation {
+.recommend {
   margin-top: -300px;
 }
-.customerRecommendation h2 {
+.recommend h2 {
   font-size: 48px;
   text-align: center;
   color: #fff;
@@ -1041,7 +1041,7 @@ img {
   padding: 10px;
 }
 
-.customerRecommendationContent {
+.recommendContent {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1049,62 +1049,62 @@ img {
   -ms-flex-pack: justify;
   justify-content: space-between;
 }
-.customerRecommendationContent li {
+.recommendContent li {
   width: 282px;
   background-color: #fff;
 }
-.customerRecommendationContent li img {
+.recommendContent li img {
   display: block;
 }
-.customerRecommendationContent .textcontent {
+.recommendContent .textcontent {
   padding: 16px;
   line-height: 1.5;
   border: 1px solid #dee2e6;
 }
-.customerRecommendationContent .textcontent .name,
-.customerRecommendationContent .textcontent .text {
+.recommendContent .textcontent .name,
+.recommendContent .textcontent .text {
   margin-bottom: 16px;
   color: #212529;
   font-weight: 600;
 }
-.customerRecommendationContent .textcontent .time {
+.recommendContent .textcontent .time {
   color: #707070;
 }
 
 @media screen and (max-width: 980px) {
-  .customerRecommendation {
+  .recommend {
     padding: 0px 48px;
   }
-  .customerRecommendation h2 {
+  .recommend h2 {
     font-size: 32px;
     margin-bottom: 32px;
   }
-  .customerRecommendationContent {
+  .recommendContent {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-  .customerRecommendationContent li {
+  .recommendContent li {
     width: 324px;
     margin-bottom: 24px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .customerRecommendation {
+  .recommend {
     padding: 0;
   }
-  .customerRecommendation h2 {
+  .recommend h2 {
     font-size: 24px;
     margin-bottom: 16px;
   }
-  .customerRecommendationContent {
+  .recommendContent {
     margin-left: 12px;
     margin-right: 12px;
   }
-  .customerRecommendationContent li {
+  .recommendContent li {
     width: 100%;
   }
-  .customerRecommendationContent li img {
+  .recommendContent li img {
     width: 100%;
   }
 }
@@ -2535,9 +2535,9 @@ img {
   transition: 0.5s;
 }
 .phoneIcon:hover img {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
+  -webkit-transform: rotate(360deg);
+  -ms-transform: rotate(360deg);
+  transform: rotate(360deg);
 }
 
 .searchInput {
@@ -2564,7 +2564,7 @@ img {
     padding: 19px 10px;
   }
   .searchInput {
-    width: 150px;
+    width: 100px;
   }
 }
 
@@ -2848,32 +2848,6 @@ img {
   background-color: #aa0601;
 }
 
-.phoneIcon {
-  opacity: 0;
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  top: 0px;
-  border: 1px solid #333;
-  width: 100%;
-  background-color: #fff;
-  padding: 10px;
-}
-.phoneIcon img {
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-.phoneIcon:hover img {
-  -webkit-transform: rotate(180deg);
-  -ms-transform: rotate(180deg);
-  transform: rotate(180deg);
-}
-
 .search {
   z-index: 11;
 }
@@ -2935,18 +2909,6 @@ img {
 
 .searchInputblock {
   display: block;
-}
-
-@media screen and (max-width: 980px) {
-  .searchInput {
-    width: 150px;
-  }
-}
-
-@media screen and (max-width: 767px) {
-  .searchInput {
-    display: none;
-  }
 }
 
 .smallActive {

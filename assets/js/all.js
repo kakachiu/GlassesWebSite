@@ -15,7 +15,7 @@ $(document).ready(function () {
 
   $(".phoneIcon").click(function () {
     $(".menuContent").toggleClass("smallActive");
-    $(".arrow img").toggleClass("rotate");
+    $(".arrow").toggleClass("rotate");
   }); // 點擊搜尋放大鏡 input才顯示
 
   $(".search").click(function () {

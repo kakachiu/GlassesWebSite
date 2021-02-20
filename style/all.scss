@@ -1,16 +1,14 @@
 @import "helpers/reset";
 @import "helpers/common";
-@import "helpers/layoutmenu";
-@import "helpers/index";
-@import "helpers/faq";
-@import "helpers/_optical";
-@import "helpers/sunglasses";
-@import "helpers/location";
-@import "helpers/detail";
-@import "helpers/blog";
-@import "helpers/more";
-@import "helpers/footer";
 
+@import "layout/layoutmenu";
+@import "layout/footer";
 
-
-
+@import "pages/index";
+@import "pages/faq";
+@import "pages/_optical";
+@import "pages/sunglasses";
+@import "pages/location";
+@import "pages/detail";
+@import "pages/blog";
+@import "pages/more";
