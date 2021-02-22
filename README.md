@@ -1,2 +1,2 @@
 # glasses
-https://kakachiu.github.io/glasses/index.html
+https://kakachiu.github.io/GlassesWebSite/
